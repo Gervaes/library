@@ -1,7 +1,7 @@
 import time
 from selenium import webdriver
 
-###### Renewing books from athena library ######
+###### Renewing books from library ######
 #Make sure you have selenium installed and geckodriver in your PATH /usr/bin or /usr/local/bin
 #http://selenium-python.readthedocs.io/installation.html
 #~$ python3 books.py
