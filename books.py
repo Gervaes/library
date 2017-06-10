@@ -2,6 +2,9 @@ import time
 from selenium import webdriver
 
 ###### Renewing books from athena library ######
+#Make sure you have selenium installed and geckodriver in your PATH /usr/bin or /usr/local/bin
+#http://selenium-python.readthedocs.io/installation.html
+#~$ python3 books.py
 
 CPF = 
 Password = 
@@ -18,7 +21,7 @@ temp = firefox.find_elements_by_xpath('html/body/table[1]/tbody/tr[2]/td[2]/a')
 temp[0].click()
 time.sleep(Sleep)
 
-#Filling form and login
+#Form and login
 firefox.find_element_by_id('pat_id').send_keys(CPF)
 firefox.find_element_by_id('pat_password').send_keys(Password)
 temp = firefox.find_elements_by_xpath('html/body/form/table/tbody/tr[3]/td/input')
